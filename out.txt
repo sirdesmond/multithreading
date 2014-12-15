@@ -1,0 +1,10 @@
+with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+    executor.submit(job, argument)
+    executor.map(some_function, collection_of_independent_things)
+
+with concurrent.futures.ProcessPoolExecutor(max_workers=4) as executor:
+
+
+sending data between processes require pickling and unpickling
+
+
